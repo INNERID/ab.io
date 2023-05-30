@@ -65,7 +65,7 @@
                 transition-duration: 0.5s;
                 height: 50%;
                 box-shadow: 0 0 10px #00000050;
-                display: none;
+                opacity: 0;
                 margin: 5%;
                 box-sizing: border-box;
             }
@@ -99,10 +99,10 @@
         <header><button onclick="openDrawer()" style="background-color:transparent;"><i class="material-icons">menu</i></button></header>
         <script charset="utf-8">
             function openDrawer() {
-                document.getElementById('act-bar').style.display = 'block';
+                document.getElementById('act-bar').style.opacity = '100%';
             }
             function closeDrawer() {
-                document.getElementById('act-bar').style.display = 'none';
+                document.getElementById('act-bar').style.opacity = '0%';
             }
         </script>
     </body>
