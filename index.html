@@ -133,10 +133,12 @@
         <script charset="utf-8">
             function openDrawer() {
                 document.getElementById('act-bar').style.opacity = '100%';
-                document.getElementById('92nd').innerHTML = ""
+                document.getElementById('92nd').innerHTML = '<span class="material-symbols-outlined">close</span>';
             }
             function closeDrawer() {
                 document.getElementById('act-bar').style.opacity = '0%';
+                document.getElementById('92nd').innerHTML = '<span class="material-symbols-outlined">menu</span>';
+            }
             }
         </script>
     </body>
