@@ -108,6 +108,9 @@
                 background-color: #FF0000;
                 padding: 5%;
             }
+            .act-bar button[class="active"] {
+                background-color: ;
+            }
             .outlined-button {
                 background-color: transparent;
                 border: solid #000000;
@@ -152,7 +155,7 @@
                 document.getElementById('act-bar').style.opacity = '0%';
             }
             function aboutPage() {
-                document.body.innerHTML = '<div id="act-bar" class="act-bar"><a id="i92ba9" href="javascript:void(0)" style="float:right;" onclick="closeDrawer()"><span class="material-symbols-outlined">close</span></a><br /><button id="top" onclick="settingPage()"><span class="material-symbols-outlined">settings</span>Setting</button><button onclick="feedbackPage()"><span class="material-symbols-outlined">feedback</span>Feedback</button><button id="bottom" onclick="aboutPage()"><span class="material-symbols-outlined">info</span>About</button></div><header class="heading"><a id="92nd" href="javascript:void(0)" onclick="openDrawer()" style="background-color:#000000;border:none;padding:2.5%;color:#FFFFFF;"><span class="material-symbols-outlined">menu</span></a><img style="float:right;" src="" onclick="location.href=index.html;"/></header><br /><br /><br /><div class="banner"><h1>About Us</h1><br /><a href="index.html">ab.io<a/> is a website that </div>'
+                document.body.innerHTML = '<div id="act-bar" class="act-bar"><a id="i92ba9" href="javascript:void(0)" style="float:right;" onclick="closeDrawer()"><span class="material-symbols-outlined">close</span></a><br /><button id="top" onclick="settingPage()"><span class="material-symbols-outlined">settings</span>Setting</button><button onclick="feedbackPage()"><span class="material-symbols-outlined">feedback</span>Feedback</button><button class="active" id="bottom" onclick="aboutPage()"><span class="material-symbols-outlined">info</span>About</button></div><header class="heading"><a id="92nd" href="javascript:void(0)" onclick="openDrawer()" style="background-color:#000000;border:none;padding:2.5%;color:#FFFFFF;"><span class="material-symbols-outlined">menu</span></a><img style="float:right;" src="" onclick="location.href=index.html;"/></header><br /><br /><br /><div class="banner"><h1>About Us</h1><br /><a href="index.html">ab.io<a/> is a website that </div>'
             }
         </script>
     </body>
