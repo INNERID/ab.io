@@ -98,41 +98,41 @@
                 box-shadow: none;
             }
             .act-bar button[id=top] {
-                border-top-right-radius: 25px;
-            }
-            .act-bar button[id=bottom] {
-                border-bottom-right-radius: 25px;
-            }
-            .act-bar button:hover {
-                border-left-color: #FFFFFF;
-                background: #000000;
-                color: #FFFFFF;
-            }
-            .act-bar button[class="2"]:hover {
-                border-right-color: #FF0000;
-            }
-            .act-bar button[class="2"]:active {
-                border-right-color: #FFFF00;
-            }
-            .act-bar button:active span {
-                background-color: #0000FF;
-            }
-            .act-bar button span {
-                text-align: left;
-                margin-right: 2.5%;
-                background-color: #FF0000;
-                padding: 5%;
-                transition-duration: 0.5s;
-            }
-            .act-bar button[class="active"] {
-                border-left-color: #FFFFFF;
-                background: #000000;
-                color: #FFFFFF;
-            }
-            .outlined-button {
-                background-color: transparent;
-                border: solid #000000;
-                border-radius: 10px;
+    border-top-right-radius: 25px;
+}
+.act-bar button[id=bottom] {
+    border-bottom-right-radius: 25px;
+}
+.act-bar button:hover {
+    border-left-color: #FFFFFF;
+    background: #000000;
+    color: #FFFFFF;
+}
+.act-bar button[class="2"]:hover {
+    border-right-color: #FF0000;
+}
+.act-bar button[class="2"]:active {
+    border-right-color: #FFFF00;
+}
+.act-bar button:active span {
+    background-color: #0000FF;
+}
+.act-bar button span {
+    text-align: left;
+    margin-right: 2.5%;
+    background-color: #FF0000;
+    padding: 5%;
+    transition-duration: 0.5s;
+}
+.act-bar button[class="active"] {
+    border-left-color: #FFFFFF;
+    background: #000000;
+    color: #FFFFFF;
+}
+.outlined-button {
+    background-color: transparent;
+    border: solid #000000;
+    border-radius: 10px;
     padding: 2.5%;
     transition-duration: 0.5s;
 }
