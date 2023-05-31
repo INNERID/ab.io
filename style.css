@@ -51,39 +51,39 @@
             .bgcolor-gradient-cyan-yellow {
                 background: linear-gradient(#00FFFF, #00FF00, #FFFF00);
             }
-            .act-bar {
-                position: fixed;
-                z-index: 1;
-                left: 20%;
-                right: 20%;
-                top: 20%;
-                bottom: 20%;
-                background-color: #FFFFFF;
-                width: 50%;
-                transition-duration: 0.5s;
-                height: 50%;
-                box-shadow: 0 0 10px #00000050;
-                opacity: 0;
-                margin: 5%;
-                padding: 1%;
-                box-sizing: border-box;
-                border: none;
-                border-radius: 25px;
-            }
-            .act-bar button {
-                border: none;
-                margin-top: 1px;
-                margin-bottom: 1px;
-                padding: 2.5%;
-                color: #000000;
-                background-color: #FFFFFF;
-                transition-duration: 0.5s;
-                width: 100%;
-                box-shadow: 0 0 5px #00000050;
-                text-align: left;
-                border-left: solid #000000 5px;
-                font-size: 16px;
-            }
+.act-bar {
+    position: fixed;
+    z-index: 1;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    bottom: 20%;
+    background-color: #FFFFFF;
+    width: 50%;
+    transition-duration: 0.5s;
+    height: 50%;
+    box-shadow: 0 0 10px #00000050;
+    opacity: 0;
+    margin: 5%;
+    padding: 1%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 25px;
+}
+.act-bar button {
+    border: none;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 2.5%;
+    color: #000000;
+    background-color: #FFFFFF;
+    transition-duration: 0.5s;
+    width: 100%;
+    box-shadow: 0 0 5px #00000050;
+    text-align: left;
+    border-left: solid #000000 5px;
+    font-size: 16px;
+}
 .act-bar button[class="non-bg"] {
     border: none;
     margin-top: 1px;
