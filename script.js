@@ -1,8 +1,10 @@
 function openDrawer() {
     document.getElementById('act-bar').style.opacity = '100%';
+    document.getElementById('act-bar').style.backdropFilter = 'blur(8px)';
 }
 function closeDrawer() {
     document.getElementById('act-bar').style.opacity = '0%';
+    document.getElementById('act-bar').style.backdropFilter = 'none';
 }
 function goBackToMain() {
     location.href="index.html";
