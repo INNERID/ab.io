@@ -59,6 +59,7 @@ a:active {
     top: 20%;
     bottom: 20%;
     width: 50%;
+    background-color: transparent;
     transition-duration: 0.5s;
     height: 50%;
     box-shadow: 0 0 10px #00000050;
