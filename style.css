@@ -235,4 +235,4 @@ input[type="text"]:focus, input[type="password"]:focus, input[type='search']:foc
 }
 .rounded-pill-button {
   border-radius: 100px;
-}
+  }
