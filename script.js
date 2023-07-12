@@ -1,20 +1,24 @@
-function openDrawer() {
-    document.getElementById('act-bar').style.opacity = '100%';
-    document.getElementById('act-bar').style.backdropFilter = 'blur(8px)';
-}
-function closeDrawer() {
-    document.getElementById('act-bar').style.opacity = '0%';
-    document.getElementById('act-bar').style.backdropFilter = 'none';
-}
-function goBackToMain() {
-    location.href="index.html";
-}
-function aboutPage() {
-    document.body.innerHTML = '<div id="act-bar" class="act-bar"><a id="i92ba9" href="javascript:void(0)" style="float:right;" onclick="closeDrawer()"><span class="material-symbols-outlined">close</span></a><br /><button id="top" onclick="settingPage()"><span class="material-symbols-outlined">settings</span>Setting</button><button onclick="feedbackPage()"><span class="material-symbols-outlined">feedback</span>Feedback</button><button class="active" id="bottom" onclick="aboutPage()"><span class="material-symbols-outlined">info</span>About</button><br /><button class="non-bg" onclick="goBackToMain()"><span class="material-symbols-outlined">arrow_back</span>Go back to main page</button></div><header class="heading"><a id="92nd" href="javascript:void(0)" onclick="openDrawer()" style="background-color:#000000;border:none;padding:2.5%;color:#FFFFFF;left:0;"><span class="material-symbols-outlined">menu</span></a><img style="float:right;" src="" onclick="location.href=index.html;"/></header><br /><br /><br /><div class="banner"><h1>About Us</h1><br /><a href="index.html">ab.io<a/> is a website that </div>'
-}
-function settingPage() {
-    document.body.innerHTML = '<div id="act-bar" class="act-bar"><a id="i92ba9" href="javascript:void(0)" style="float:right;" onclick="closeDrawer()"><span class="material-symbols-outlined">close</span></a><br /><button class="active" id="top" onclick="settingPage()"><span class="material-symbols-outlined">settings</span>Setting</button><button onclick="feedbackPage()"><span class="material-symbols-outlined">feedback</span>Feedback</button><button id="bottom" onclick="aboutPage()"><span class="material-symbols-outlined">info</span>About</button><br /><button class="non-bg" onclick="goBackToMain()"><span class="material-symbols-outlined">arrow_back</span>Go back to main page</button></div><header class="heading"><a id="92nd" href="javascript:void(0)" onclick="openDrawer()" style="background-color:#000000;border:none;padding:2.5%;color:#FFFFFF;left:0;"><span class="material-symbols-outlined">menu</span></a><img style="float:right;" src="" onclick="location.href=index.html;"/></header><br /><br /><br /><div class="banner"><h1>Setting</h1><br /><button class="outlined-button" onclick="toggleDarkMode()"><span class="material-symbols-outlined">dark_mode</span> Dark mode</button></div>'
-}
-function feedbackPage() {
-    document.body.innerHTML = '<div id="act-bar" class="act-bar"><a id="i92ba9" href="javascript:void(0)" style="float:right;" onclick="closeDrawer()"><span class="material-symbols-outlined">close</span></a><br /><button id="top" onclick="settingPage()"><span class="material-symbols-outlined">settings</span>Setting</button><button class="active" onclick="feedbackPage()"><span class="material-symbols-outlined">feedback</span>Feedback</button><button id="bottom" onclick="aboutPage()"><span class="material-symbols-outlined">info</span>About</button><br /><button class="non-bg" onclick="goBackToMain()"><span class="material-symbols-outlined">arrow_back</span>Go back to main page</button></div><header class="heading"><a id="92nd" href="javascript:void(0)" onclick="openDrawer()" style="background-color:#000000;border:none;padding:2.5%;color:#FFFFFF;left:0;"><span class="material-symbols-outlined">menu</span></a><img style="float:right;" src="" onclick="location.href=index.html;"/></header><br /><br /><br /><div class="banner"><h1>Feedbacl</h1><br /><a href="https://github.com/INNERID><span class="material-symbols-outlined">github</span> Github</a></div>'
-}
+//Open/Close Navigation Drawer
+document.getElementById('menu').addEventListener('click', () => {
+  document.getElementById('nav-container').style.width = '100%';
+});
+document.getElementById('close-menu').addEventListener('click', () => {
+  document.getElementById('nav-container').style.width = '0';
+});
+
+document.getElementById('user').addEventListener('click', () => {
+  location.href = 'https://innerid.github.com/ab.io/login.html';
+});
+
+//Navigation
+document.getElementById('nav-to-home').addEventListener('click', () => {
+  document.body.innerHTML = '<header class="header"><button class="outlined-button" id="menu" style="float:left;"><span class="material-symbols-sharp">menu</span></button><button class="outlined-button" id="user" style="float:right;"><span class="material-symbols-sharp">person</span></button></header><br><br><br><br><br><div class="nav-container" id="nav-container"><div class="content"><button id="nav-to-home" class="active"><span class="material-symbols-sharp">home</span><h1>Home</h1></button><button id="nav-to-about"><span class="material-symbols-sharp">info</span> <h1>About</h1></button><button id="nav-to-setting"><span class="material-symbols-sharp">settings</span> <h1>Setting</h1></button><button id="nav-to-feedback"><span class="material-symbols-sharp">feedback</span> <h1>Feedback</h1></button><button id="close-menu"><span class="material-symbols-sharp">close</span><h1>Close</h1></button></div></div><div class="container rb">h1>New Era of AB</h1><p>With Arctic style design</p><button id="explore-ac728d" class="outlined-button rounded-pill-button"><span class="material-symbols-sharp">explore</span>Explore</button>br><button id="back-vi92bs" class="outlined-button rounded-pill-button" onclick="location.href="https://innerid.github.io/ab.io/";"><span class="material-symbols-sharp">arrow_back</span>Back To Main Web</button></div>';
+});
+
+document.getElementById('nav-to-about').addEventListener('click', () => {
+  document.body.innerHTML = '<header class="header"><button class="outlined-button" id="menu" style="float:left;"><span class="material-symbols-sharp">menu</span></button><button class="outlined-button" id="user" style="float:right;"><span class="material-symbols-sharp">person</span></button></header><br><br><br><br><br><div class="nav-container" id="nav-container"><div class="content"><button id="nav-to-home"><span class="material-symbols-sharp">home</span><h1>Home</h1></button><button id="nav-to-about" class="active"><span class="material-symbols-sharp">info</span> <h1>About</h1></button><button id="nav-to-setting"><span class="material-symbols-sharp">settings</span> <h1>Setting</h1></button><button id="nav-to-feedback"><span class="material-symbols-sharp">feedback</span> <h1>Feedback</h1></button><button id="close-menu"><span class="material-symbols-sharp">close</span><h1>Close</h1></button></div></div><div class="container rb">h1>About</h1><p><a href="index.html">ab.io</a> is A website</p></div>';
+});
+
+document.getElementById('nav-to-setting').addEventListener('click', () => {
+  document.body.innerHTML = '<header class="header"><button class="outlined-button" id="menu" style="float:left;"><span class="material-symbols-sharp">menu</span></button><button class="outlined-button" id="user" style="float:right;"><span class="material-symbols-sharp">person</span></button></header><br><br><br><br><br><div class="nav-container" id="nav-container"><div class="content"><button id="nav-to-home"><span class="material-symbols-sharp">home</span><h1>Home</h1></button><button id="nav-to-about" class="active"><span class="material-symbols-sharp">info</span> <h1>About</h1></button><button id="nav-to-setting"><span class="material-symbols-sharp">settings</span> <h1>Setting</h1></button><button id="nav-to-feedback"><span class="material-symbols-sharp">feedback</span> <h1>Feedback</h1></button><button id="close-menu"><span class="material-symbols-sharp">close</span><h1>Close</h1></button></div></div><div class="container rb"><h1>Setting</h1><br><button id="setting-1" class="outlined-button"><span class="material-symbols-sharp">architecture</span> Personalisation</button><option><select>English(UK)</select><select>Русский(RU)</select></option></div>';
+});
