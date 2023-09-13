@@ -1,5 +1,5 @@
 /*
-Arctic Style CSS v0.1.9beta. Copyright 2020-2023 AB Electronic Corporation
+Arctic Style CSS v0.2.2beta_build-12092023 Copyright 2020-2023 AB Electronic Corporation
 */
 * {
   box-sizing: border-box;
@@ -7,8 +7,8 @@ Arctic Style CSS v0.1.9beta. Copyright 2020-2023 AB Electronic Corporation
   transition-timing-function: ease;
 }
 ::selection {
-  background-color: #00A5FF;
-  color: #FFFFFF;
+  background-color: var(--main-color);
+  color: var(--default-color-white);
 }
 ::spelling-error {
   color: #FF0000;
@@ -20,17 +20,17 @@ Arctic Style CSS v0.1.9beta. Copyright 2020-2023 AB Electronic Corporation
 }
 :root {
   scroll-behavior: smooth;
-  --header-color: #FF000025;
+  --header-color: #00000025;
   --nav-button-bgcolor-active: #FFFFFF;
-  --top-nav-button-bgcolor-active: #FF0000;
-  --main-color: #FF0000;
+  --top-nav-button-bgcolor-active: #000000;
+  --main-color: #000000;
   --color-palette-1: #EFEFEF;
   --color-palette-2: #888888;
   --color-palette-3: #98CAFF;
   --color-palette-4: #EAEAEA;
-  --color-palette-5: #FC9C9C;
-  --color-palette-6: #FF6161;
-  --caret-color: #FF0000;
+  --color-palette-5: #CCCCCC;
+  --color-palette-6: #111111;
+  --caret-color: #000000;
   --outline-color: #A5D2FF;
   --outline-color-active: #FFAB00;
   --default-color-white: #FFFFFF;
@@ -49,7 +49,7 @@ body {
   font-family: sans-serif;
 }
 a {
-  color: #FF0000;
+  color: var(--default-color-black);
 }
 a:hover {
   text-decoration: underline;
@@ -277,14 +277,14 @@ input[type="checkbox"]:checked, input[type="radio"]:checked {
 .header button[class="outlined-button"]:active {
   border-color: var(--main-color);
   background-color: var(--main-color);
-  color: #FFFFFF;
+  color: var(--default-color-black);
 }
 .header button[class="outlined-button"] .material-symbols-sharp {
   font-size: 24px;
-  color: #FF0000;
+  color: var(--default-color-black);
 }
 .header button[class="outlined-button"]:active > .material-symbols-sharp {
-  color: #FFFFFF;
+  color: var(--default-color-white);
 }
 .header .search {
   background-color: transparent;
@@ -303,7 +303,7 @@ input[type="checkbox"]:checked, input[type="radio"]:checked {
 .header .topnav button[class*="active"] {
   background-color: var(--top-nav-button-bgcolor-active);
   color: var(--default-color-white);
-  border-color: #FF0000;
+  border-color: #000000;
 }
 .header .topnav button[class*="active"]:after {
   width: 100%;
@@ -388,7 +388,7 @@ input[type="checkbox"]:checked, input[type="radio"]:checked {
   border-radius: 100%;
   padding: 2.5%;
   background-color: var(--color-palette-6);
-  color: #FFFFFF;
+  color: var(--default-color-white);
 }
 .nav-container .content button h1 {
   text-align: center;
@@ -639,7 +639,7 @@ input[type="checkbox"]:checked, input[type="radio"]:checked {
 }
 .left-side-nav-button:hover {
   background-color: var(--default-color-white);
-  color: #FF0000;
+  color: var(--main-color);
 }
 .left-side-nav-button:hover > .material-symbols-sharp {
   background-color: var(--main-color);
@@ -647,7 +647,7 @@ input[type="checkbox"]:checked, input[type="radio"]:checked {
 }
 .left-side-nav-button[class*='active'] {
   background-color: var(--default-color-white);
-  color: #FF0000;
+  color: var(--main-color);
 }
 .left-side-nav-button[class*='active'] > .material-symbols-sharp {
   background-color: var(--main-color);
@@ -684,6 +684,7 @@ input[type="checkbox"]:checked, input[type="radio"]:checked {
   left: 0;
   bottom: 0;
   display: flex;
+  height: 100%;
 }
 .footer .content {
   padding: 1%;
@@ -789,16 +790,17 @@ input[type="checkbox"]:checked, input[type="radio"]:checked {
   .material-symbols-sharp {padding: 0.5%;}
 }
 .dark {
-  --header-color: #FF000025;
+  --header-color: #00000025;
   --nav-button-bgcolor-active: #000000;
-  --top-nav-button-bgcolor-active: #FF0000;
+  --top-nav-button-bgcolor-active: #000000;
+  --main-color: #FFFFFF;
   --color-palette-1: #1F1F1F;
   --color-palette-2: #888888;
   --color-palette-3: #003166;
   --color-palette-4: #1A1A1A;
-  --color-palette-5: #630303;
-  --color-palette-6: #FF6161;
+  --color-palette-5: #030303;
+  --color-palette-6: #F1F1F1;
   --caret-color: #805500;
   --default-color-white: #000000;
   --default-color-black: #FFFFFF;
-}
+  }
