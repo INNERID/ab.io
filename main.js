@@ -31,7 +31,7 @@ var topNavToSettingBtn = document.getElementById('top nav-to-setting');
 var leftSideNavSettingBtn = document.getElementById('left nav-to-setting');
 //Home Page
 function navToHome() {
-  document.getElementById('main-content').innerHTML = '<div class="container rounder bgcred" id="merdeka-banner-727hs8j"><h1>Happy 78th Indonesian Independence Day</h1><p>Keep Going For Indonesia To Move Forward</p><button class="outlined-button rounded-pill-button white-border white-text-color" id="explore-29f3bk"><span class="material-symbols-sharp">info</span>Learn More</button></div><div class="container rounder border black-text-color"><h1>New Era of AB</h1><p>With Arctic style design</p><button id="explore-ac728d" class="outlined-button rounded-pill-button black-text-color"><span class="material-symbols-sharp">explore</span>Explore</button></div><div class="container rounder border"><h1>What\'s New?</h1><ul><li>New Interface</li><li>New Features</li></ul></div><div class="container rounder border black-text-color"><h1>Our Github</h1><ul><li><a href="https://github.com/INNERID/">INNERID</a></li></ul></div><div class="container rounder border black-text-color"><h1>For Devs</h1><a href="style.css" download>Download Arctic Style CSS</a></div><div class="container rounder border"><h1>Services</h1><ul><li><a href="">Maps</a></li><li><a href="clouds.ab.io">Cloud Storage</a></li><li><a href="market.ab.io">Marketplace</a></li></ul></div>';
+  document.getElementById('main-content').innerHTML = '<div class="container rounder border black-text-color"><h1>New Era of AB</h1><p>With Arctic style design</p><button id="explore-ac728d" class="outlined-button rounded-pill-button black-text-color"><span class="material-symbols-sharp">explore</span>Explore</button></div><div class="container rounder border"><h1>What\'s New?</h1><ul><li>New Interface</li><li>New Features</li></ul></div><div class="container rounder border black-text-color"><h1>Our Github</h1><ul><li><a href="https://github.com/INNERID/">INNERID</a></li></ul></div><div class="container rounder border black-text-color"><h1>For Devs</h1><a href="style.css" download>Download Arctic Style CSS</a></div><div class="container rounder border"><h1>Services</h1><ul><li><a href="">Maps</a></li><li><a href="clouds.ab.io">Cloud Storage</a></li><li><a href="market.ab.io">Marketplace</a></li></ul></div>';
   navToHomeBtn.classList.add('active');
   topNavToHomeBtn.classList.add('active');
   leftSideNavToHomeBtn.classList.add('active');
@@ -127,6 +127,7 @@ function darkModeSwitchIndicator() {
     document.getElementById('switch-indicator-3828id').innerHTML = 'on';
     document.getElementById('switch-indicator-3828id').style.color = '#00FF00';
     document.getElementsByClassName('ab-logo').src = '/res/image/AB_Logo_2023-08-18_Dark_Theme.png';
+    document.getElementById('section-personaliation').
   } else {
     var darkModeIndicator = document.getElementById('switch-indicator-3828id').innerHTML = 'off';
     var darkModeIndicator = document.getElementById('switch-indicator-3828id').style.color = '#FF0000';
